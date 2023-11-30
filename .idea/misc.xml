@@ -4,10 +4,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/iac/pom.xml" />
-        <option value="$PROJECT_DIR$/lambda/pom.xml" />
-        <option value="$PROJECT_DIR$/software/lambda-example/pom.xml" />
+        <option value="$PROJECT_DIR$/software/test-lambda/pom.xml" />
         <option value="$PROJECT_DIR$/infrastructure/pom.xml" />
+        <option value="$PROJECT_DIR$/lambdas/test-lambda/pom.xml" />
       </list>
     </option>
   </component>
