@@ -1,5 +1,6 @@
 .classpath.txt
-target
+infrastructure/target
+lambdas/*/target
 .classpath
 .project
 .idea

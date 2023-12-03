@@ -1,4 +1,4 @@
-package com.uk.savient;
+package com.uk.savient.greetings;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

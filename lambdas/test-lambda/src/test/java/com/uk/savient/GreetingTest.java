@@ -11,9 +11,16 @@ public class GreetingTest
 {
     @Test
     public void testJaxrs() {
-        RestAssured.when().get("/hello").then()
+        RestAssured.when().get("/greetings/hello").then()
                 .contentType("text/plain")
-                .body(equalTo("hello jaxrs"));
+                .body(equalTo("hello from jaxrs"));
+    }
+
+    @Test
+    public void testEvenin() {
+        RestAssured.when().get("/greetings/evening").then()
+                .contentType("text/plain")
+                .body(equalTo("evenin squire!"));
     }
 
 

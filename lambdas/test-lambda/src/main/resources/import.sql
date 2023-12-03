@@ -1,0 +1,1 @@
+INSERT INTO monster (id, name, hp, ac) VALUES ('642e5214-90f4-11ee-b9d1-0242ac120002', 'Dire Wolf', 37, 14);
