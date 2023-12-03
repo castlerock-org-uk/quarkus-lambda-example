@@ -1,10 +1,8 @@
-package com.myorg;
+package com.uk.savient;
 
 import software.amazon.awscdk.App;
 import software.amazon.awscdk.Environment;
 import software.amazon.awscdk.StackProps;
-
-import java.util.Arrays;
 
 public class QuarkusLambdaExampleApp {
     public static void main(final String[] args) {

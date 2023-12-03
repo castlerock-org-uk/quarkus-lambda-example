@@ -1,4 +1,4 @@
-package com.myorg;
+package com.uk.savient;
 
 public final class Config {
 

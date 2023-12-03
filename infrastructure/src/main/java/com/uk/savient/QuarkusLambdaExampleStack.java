@@ -1,12 +1,10 @@
-package com.myorg;
+package com.uk.savient;
 
 import software.amazon.awscdk.CfnOutput;
 import software.amazon.awscdk.CfnOutputProps;
 import software.amazon.awscdk.Duration;
-import software.amazon.awscdk.services.apigatewayv2.alpha.AddRoutesOptions;
 import software.amazon.awscdk.services.apigatewayv2.alpha.HttpApi;
 import software.amazon.awscdk.services.apigatewayv2.alpha.HttpApiProps;
-import software.amazon.awscdk.services.apigatewayv2.alpha.HttpMethod;
 import software.amazon.awscdk.services.apigatewayv2.integrations.alpha.HttpLambdaIntegration;
 import software.amazon.awscdk.services.lambda.Alias;
 import software.amazon.awscdk.services.lambda.Architecture;
@@ -22,8 +20,6 @@ import software.amazon.awscdk.StackProps;
 
 import java.time.LocalDateTime;
 import java.util.Map;
-
-import static java.util.Collections.singletonList;
 
 public class QuarkusLambdaExampleStack extends Stack {
 
