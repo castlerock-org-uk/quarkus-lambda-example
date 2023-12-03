@@ -1,6 +1,5 @@
 package com.myorg;
 
-import org.jetbrains.annotations.NotNull;
 import software.amazon.awscdk.CfnOutput;
 import software.amazon.awscdk.CfnOutputProps;
 import software.amazon.awscdk.Duration;
@@ -8,9 +7,6 @@ import software.amazon.awscdk.services.apigatewayv2.alpha.AddRoutesOptions;
 import software.amazon.awscdk.services.apigatewayv2.alpha.HttpApi;
 import software.amazon.awscdk.services.apigatewayv2.alpha.HttpApiProps;
 import software.amazon.awscdk.services.apigatewayv2.alpha.HttpMethod;
-import software.amazon.awscdk.services.apigatewayv2.alpha.HttpRouteIntegration;
-import software.amazon.awscdk.services.apigatewayv2.alpha.HttpRouteIntegrationBindOptions;
-import software.amazon.awscdk.services.apigatewayv2.alpha.HttpRouteIntegrationConfig;
 import software.amazon.awscdk.services.apigatewayv2.integrations.alpha.HttpLambdaIntegration;
 import software.amazon.awscdk.services.lambda.Architecture;
 import software.amazon.awscdk.services.lambda.Code;
@@ -37,9 +33,9 @@ public class QuarkusLambdaExampleStack extends Stack {
                 .runtime(Runtime.JAVA_21)
                 .architecture(Architecture.ARM_64)
                 .memorySize(1700)
-                .code(Code.fromAsset(Config.functionZip))
-                .handler(Config.quarkusFunctionHandler)
-                .timeout(Duration.seconds(Config.lambdaTimeout))
+                .code(Code.fromAsset(Config.FUNCTION_ZIP))
+                .handler(Config.QUARKUS_FUNCTION_HANDLER)
+                .timeout(Duration.seconds(Config.LAMBDA_TIMEOUT))
                 .environment(Map.of(
                         "JAVA_TOOL_OPTIONS", "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"))
                 .build();

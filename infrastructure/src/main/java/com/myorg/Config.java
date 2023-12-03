@@ -6,9 +6,9 @@ public final class Config {
         //Private constructor to prevent instantiation
     }
 
-    public static final String functionZip = "../software/lambda-example/target/function.zip";
-    public static final String quarkusFunctionHandler = "io.quarkus.amazon.lambda.runtime.QuarkusStreamHandler::handleRequest";
-    public static final int lambdaTimeout = 10;
+    public static final String FUNCTION_ZIP = "../lambdas/test-lambda/target/function.zip";
+    public static final String QUARKUS_FUNCTION_HANDLER = "io.quarkus.amazon.lambda.runtime.QuarkusStreamHandler::handleRequest";
+    public static final int LAMBDA_TIMEOUT = 10;
 
     public static final String FUNCTION_NAME = "testFunction";
 
